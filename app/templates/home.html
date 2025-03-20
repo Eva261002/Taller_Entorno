@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
-    <header>
-        <h1>About Us</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Welcome to the Home Page</h1>
+ {% extends "base.html" %} 
+
+{% block title %}
+    <title>HOME</title>
+{% endblock title%}
+
+{% block content %}   
     <p>This is the home page of your Django application.</p>
-</body>
-</html>
+{% endblock content%}
+
+{% block footer %}
+    <p>Thank you for visiting our website.</p>
+    &copy; 2025 by Your Company
+{% endblock footer %}
+
+

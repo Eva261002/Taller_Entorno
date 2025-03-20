@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %} 
+
+{% block title %}
     <title>About Us</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
-    <header>
-        <h1>About Us</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>We aim to provide the best services to our customers.</p>
-        </section>
-        <section>
-            <h2>Our Team</h2>
-            <p>We have a dedicated team of professionals.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+{% endblock title%}
+
+{% block content %}   
+<section>
+    <h2>Our Mission</h2>
+    <p>We aim to provide the best services to our customers.</p>
+</section>
+<section>
+    <h2>Our Team</h2>
+    <p>We have a dedicated team of professionals.</p>
+</section>
+{% endblock content%}
+
+{% block footer %}
+    <p>Thank you for visiting our website.</p>
+    &copy; 2025 by Your Company
+{% endblock footer %}
